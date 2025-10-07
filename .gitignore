@@ -1,0 +1,260 @@
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Gradle cache and settings
+.gradle-cache/
+gradle-app.setting
+
+# Build outputs
+out/
+bin/
+target/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+.idea_modules/
+
+# IntelliJ IDEA temporary files
+*.sw?
+*.swp
+*.swo
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.metadata
+.recommenders
+*.launch
+.buildpath
+.target
+*.pydevproject
+.cproject
+.loadpath
+.externalToolBuilders/
+local.properties
+
+### VSCode ###
+.vscode/
+*.code-workspace
+.history/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# macOS Thumbnails and system files
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+### Logs ###
+*.log
+logs/
+*.log.*
+log/
+
+# Application logs
+application.log
+application-*.log
+spring.log
+
+### Databases ###
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+*.trace.db
+
+# Database directories
+/data/
+/database/
+
+### Environment & Configuration ###
+.env
+.env.local
+.env.*.local
+.envrc
+
+# Application configuration (keep templates, ignore actual configs)
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# Secrets and credentials
+*-secrets.yml
+*-secrets.yaml
+*-secrets.properties
+credentials.json
+secrets.json
+.credentials/
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Package Files
+*.zip
+*.tar.gz
+*.rar
+
+# JVM Crash Logs
+hs_err_pid*.log
+
+### Kotlin ###
+.kotlin/
+*.kt.swp
+
+### Spring Boot ###
+HELP.md
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+
+### Testing ###
+# Test coverage reports
+.coverage
+htmlcov/
+coverage/
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# JUnit
+junit*.properties
+
+# TestNG
+test-output/
+
+### Build Tools ###
+# Maven (in case project uses both)
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Docker ###
+docker-compose.override.yml
+.dockerignore
+
+### Node (for frontend assets if any) ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/
+.pnp.*
+
+### Temporary Files ###
+*.tmp
+*.temp
+*.bak
+*~.nib
+*.orig
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+
+### Monitoring & Profiling ###
+*.hprof
+*.prof
+*.jfr
+
+# JProfiler
+*.jpdata
+
+# YourKit
+*.snapshot
+
+### Documentation ###
+# Generated documentation
+/docs/build/
+/docs/_build/
+/docs/.docusaurus/
+
+### Cache ###
+.cache/
+*.cache
+
+### Other ###
+# Generated files
+generated/
+.generated/
+
+# Backup files
+*.backup
+*.old
+
+# System Files
+System Volume Information
