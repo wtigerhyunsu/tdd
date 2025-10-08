@@ -35,12 +35,16 @@ class BowlingGameTest {
      * ex) spare 이후 4점을 스러트리면 4 + 4(보너스) */
     @Test
     fun `one spare`() {
-        game.roll(5)
-        game.roll(5) // spare
+        rollSpare() // spare
         game.roll(3)
         rollMany(17,0)
 
         assertThat(game.score()).isEqualTo(16)
+    }
+
+    private fun rollSpare() {
+        game.roll(5)
+        game.roll(5)
     }
 
     private fun rollMany(n : Int, pins: Int) {
