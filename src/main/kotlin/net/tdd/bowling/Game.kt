@@ -1,7 +1,9 @@
 package net.tdd.bowling
 
 class Game{
+    var score = 0
     fun roll(pins: Int) {
+        score += pins
     }
 
     /**
@@ -10,7 +12,7 @@ class Game{
      * 이후 성공만하는 로직을 만들어도 됩니다.
      */
     fun score(): Int {
-        return  0
+        return  score
     }
 
 }
