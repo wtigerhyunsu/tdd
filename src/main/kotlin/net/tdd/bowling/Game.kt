@@ -18,7 +18,10 @@ class Game{
         var frameIndex = 0
 
         for(frame in 0 until 10) {
-            if(isSpare(frameIndex)){
+            if(rolls[frameIndex] == 10){
+                score += 10 + rolls[frameIndex + 1] + rolls[frameIndex + 2]
+                frameIndex += 1
+            }else if(isSpare(frameIndex)){
                 score += 10 + rolls[frameIndex + 2]
                 frameIndex += 2
             }else{
