@@ -29,6 +29,19 @@ class BowlingGameTest {
         rollMany(20,1)
         assertThat(game.score()).isEqualTo(20)
     }
+    /**
+     * spare는 두번의 기회에 10개의 모든 핀을 스러트리면
+     * 다음 기회에 쓰러트린 핀의 개수를 보너스 점수로 받음
+     * ex) spare 이후 4점을 스러트리면 4 + 4(보너스) */
+    @Test
+    fun `one spare`() {
+        game.roll(5)
+        game.roll(5) // spare
+        game.roll(3)
+        rollMany(17,0)
+
+        assertThat(game.score()).isEqualTo(16)
+    }
 
     private fun rollMany(n : Int, pins: Int) {
         repeat(n) {
