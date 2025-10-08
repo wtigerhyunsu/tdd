@@ -18,20 +18,28 @@ class Game{
         var frameIndex = 0
 
         for(frame in 0 until 10) {
-            if(rolls[frameIndex] == 10){
-                score += 10 + rolls[frameIndex + 1] + rolls[frameIndex + 2]
+            if(isStrike(frameIndex)){
+                score += 10 + strikeBonus(frameIndex)
                 frameIndex += 1
             }else if(isSpare(frameIndex)){
-                score += 10 + rolls[frameIndex + 2]
+                score += 10 + spareBonus(frameIndex)
                 frameIndex += 2
             }else{
-                score += rolls[frameIndex] + rolls[frameIndex + 1]
+                score += sumOfPinsFrame(frameIndex)
                 frameIndex += 2
             }
         }
 
         return  score
     }
+
+    private fun sumOfPinsFrame(frameIndex: Int): Int = rolls[frameIndex] + rolls[frameIndex + 1]
+
+    private fun spareBonus(frameIndex: Int): Int = rolls[frameIndex + 2]
+
+    private fun strikeBonus(frameIndex: Int): Int = rolls[frameIndex + 1] + rolls[frameIndex + 2]
+
+    private fun isStrike(frameIndex: Int): Boolean = rolls[frameIndex] == 10
 
     private fun isSpare(frameIndex: Int): Boolean = rolls[frameIndex] + rolls[frameIndex + 1] == 10
 
